@@ -11,13 +11,13 @@ In my solution use "tf.add(tf.matmul(input, weight), biases)" instead.
 In this solution, we need to use tf.get_variable('name', initializer), not tf.Variable().  
 If we use tf. Variable, we get multiple weight and biases as below.  
 
- <tf.Variable 'discriminator/Variable:0' shape=(784, 128) dtype=float32_ref>,
- <tf.Variable 'discriminator/Variable_1:0' shape=(128, 1) dtype=float32_ref>,
- <tf.Variable 'discriminator/Variable_2:0' shape=(128,) dtype=float32_ref>,
- <tf.Variable 'discriminator/Variable_3:0' shape=(1,) dtype=float32_ref>,
- <tf.Variable 'discriminator_1/Variable:0' shape=(784, 128) dtype=float32_ref>,
- <tf.Variable 'discriminator_1/Variable_1:0' shape=(128, 1) dtype=float32_ref>,
- <tf.Variable 'discriminator_1/Variable_2:0' shape=(128,) dtype=float32_ref>,
+ <tf.Variable 'discriminator/Variable:0' shape=(784, 128) dtype=float32_ref>,  
+ <tf.Variable 'discriminator/Variable_1:0' shape=(128, 1) dtype=float32_ref>,  
+ <tf.Variable 'discriminator/Variable_2:0' shape=(128,) dtype=float32_ref>,  
+ <tf.Variable 'discriminator/Variable_3:0' shape=(1,) dtype=float32_ref>,  
+ <tf.Variable 'discriminator_1/Variable:0' shape=(784, 128) dtype=float32_ref>,  
+ <tf.Variable 'discriminator_1/Variable_1:0' shape=(128, 1) dtype=float32_ref>,  
+ <tf.Variable 'discriminator_1/Variable_2:0' shape=(128,) dtype=float32_ref>,  
  <tf.Variable 'discriminator_1/Variable_3:0' shape=(1,) dtype=float32_ref>]  
    
  Reference are as below.
