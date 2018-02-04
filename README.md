@@ -6,8 +6,8 @@ This is my solution for Udacity DLND project about GAN.
 https://github.com/udacity/deep-learning/tree/master/gan_mnist  
   
   
-The solution provided by Udacity use "tf.layers.dense" to build the generator and discriminator,  
-on the other hand my solution use "tf.add(tf.matmul(input, weight), biases)".  
+The solution provided from Udacity used "tf.layers.dense" to build the generator and discriminator.  
+In my solution, I used "tf.add(tf.matmul(input, weight), biases)".  
   
 In this solution, we need to use tf.get_variable('name', initializer), not tf.Variable().  
 If we use tf.Variable, we get multiple weight and biases as below.  
