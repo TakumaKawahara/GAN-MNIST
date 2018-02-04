@@ -20,19 +20,15 @@ If we use tf.Variable, we get multiple weight and biases as below.
  <tf.Variable 'discriminator_1/Variable:0' shape=(784, 128) dtype=float32_ref>,  
  <tf.Variable 'discriminator_1/Variable_1:0' shape=(128, 1) dtype=float32_ref>,  
  <tf.Variable 'discriminator_1/Variable_2:0' shape=(128,) dtype=float32_ref>,  
- <tf.Variable 'discriminator_1/Variable_3:0' shape=(1,) dtype=float32_ref>]  
+ <tf.Variable 'discriminator_1/Variable_3:0' shape=(1,) dtype=float32_ref> 
  ```
    
  If we use tf.get_variable, we get results as below. 
 ```
- [<tf.Variable 'generator/wc_g1:0' shape=(100, 128) dtype=float32_ref>,
- <tf.Variable 'generator/wc_g2:0' shape=(128, 784) dtype=float32_ref>,
- <tf.Variable 'generator/bc_g1:0' shape=(128,) dtype=float32_ref>,
- <tf.Variable 'generator/bc_g2:0' shape=(784,) dtype=float32_ref>,
  <tf.Variable 'discriminator/wc_d1:0' shape=(784, 128) dtype=float32_ref>,
  <tf.Variable 'discriminator/wc_d2:0' shape=(128, 1) dtype=float32_ref>,
  <tf.Variable 'discriminator/bc_d1:0' shape=(128,) dtype=float32_ref>,
- <tf.Variable 'discriminator/bc_d2:0' shape=(1,) dtype=float32_ref>]
+ <tf.Variable 'discriminator/bc_d2:0' shape=(1,) dtype=float32_ref>
 ```
   
  Reference are as below.  
