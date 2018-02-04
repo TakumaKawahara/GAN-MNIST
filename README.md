@@ -21,6 +21,6 @@ If we use tf. Variable, we get multiple weight and biases as below.
  <tf.Variable 'discriminator_1/Variable_2:0' shape=(128,) dtype=float32_ref>,  
  <tf.Variable 'discriminator_1/Variable_3:0' shape=(1,) dtype=float32_ref>]  
    
- Reference are as below.
+ Reference are as below.  
  https://stackoverflow.com/questions/44964691/tf-trainable-variables-returns-more-than-one-graphs-variable
  https://deepage.net/tensorflow/2017/06/02/tensorflow-variable.html
